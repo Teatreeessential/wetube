@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(morgan("dev"));
 
-app.use(localsMiddleware);
+app.use(localsMiddleware);  
 
 app.use(routes.home,globalRouter);
 app.use(routes.users,userRouter); //user라우터가 userRouter를 모두 다 사용한다는 뜻.
